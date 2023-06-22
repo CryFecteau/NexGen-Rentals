@@ -10,4 +10,14 @@ body {
 body {
     margin: 0;
     font-family: 'Jura', sans-serif;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    letter-spacing: 2px;
+}
+
+.stroke-text {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(210, 46, 255, 1);
 }
