@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'nexgen-rentals';
+  isLoading = true;
+
+  handleEnterClick(data: boolean) {
+    this.isLoading = data;
+  }
 }

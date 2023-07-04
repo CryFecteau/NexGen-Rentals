@@ -11,6 +11,7 @@ import { PopularComponent } from './components/popular/popular.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { OffersComponent } from './components/offers/offers.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './components/footer/footer.component';
     PopularComponent,
     FeaturesComponent,
     OffersComponent,
-    FooterComponent
+    FooterComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

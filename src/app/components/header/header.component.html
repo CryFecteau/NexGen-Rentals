@@ -3,11 +3,24 @@
         <div class="logo">
             NexGen Rentals
         </div>
-        <ul class="menu">
+        <ul class="menu-lg">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#popular">Popular</a></li>
             <li><a href="#featured">Featured</a></li>
+            <li><a href="#offers">Offers</a></li>
         </ul>
+        <div class="menu-sm">
+            <div class="menu-btn" (click)="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="sm-links" [ngClass]=" { 'ops-open': isNavOpen} ">
+                <a href="#" (click)="toggleNav()">Home</a>
+                <a href="#about" (click)="toggleNav()">About</a>
+                <a href="#popular" (click)="toggleNav()">Popular</a>
+                <a href="#featured" (click)="toggleNav()">Featured</a>
+                <a href="#offers" (click)="toggleNav()">Offers</a>
+            </div>
+        </div>
     </nav>
 </div>

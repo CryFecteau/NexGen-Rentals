@@ -10,7 +10,8 @@
     color: white;
     text-align: center;
     position: relative;
-    bottom: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 @mixin aspect-ratio($width, $height) {

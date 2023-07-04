@@ -1,0 +1,19 @@
+<div class="loading-card">
+    <div class="loading-content">
+        <span class="loading-title">Welcome to NexGen Rentals</span>
+        <span class="loading-body">This responsive web application is a mock car rental site created to showcase Angular
+            and CSS. Feel free to explore and interact with the site, but keep in
+            mind that it's for demonstration purposes only. Thank you for visting!
+        </span>
+        <span class="loading-subtitle">
+            - Crystal Fecteau
+        </span>
+        <div class="loading-footer">
+            <div class="progress-loader">
+                <div class="progress"></div>
+            </div>
+            <button (click)="handleEnterClick()" [disabled]="isButtonDisabled"
+                [ngClass]="{'loading-button-disabled': isButtonDisabled, 'loading-button': !isButtonDisabled}">{{buttonText}}</button>
+        </div>
+    </div>
+</div>
