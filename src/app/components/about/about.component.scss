@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
+    padding: 0 5rem;
 }
 
 .about-content {
@@ -14,6 +14,9 @@
 .about-image {
     flex: 1;
     box-shadow: 0px 0px 90px 40px rgba(0, 0, 0, 0.75) inset;
+    width: 100%;
+    display: flex;
+    align-items: center;
 
     img {
         width: 100%;
@@ -25,7 +28,7 @@
 
 .about-text {
     flex: 1;
-    padding: 1rem 0 0 3rem;
+    padding-left: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,12 +38,12 @@
 .header {
     color: #333;
     margin-bottom: 10px;
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 3vw, 3rem);
     color: white;
 }
 
 .description {
-    font-size: 1rem;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     line-height: 1.5rem;
     margin-bottom: 20px;
 }
@@ -82,4 +85,14 @@
 
 .learn-more-button:hover:before {
     transform: translateX(15em);
+}
+
+@media screen and (max-width: 800px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text {
+        padding: 0;
+    }
 }
